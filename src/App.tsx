@@ -20,7 +20,9 @@ const App = () => (
     <TooltipProvider>
       <Sonner />
       <BrowserRouter>
+        <ParticlesBackground />
         <Navbar />
+        <WhatsAppButton />
         <main className="min-h-screen">
           <Routes>
             <Route path="/" element={<Index />} />
