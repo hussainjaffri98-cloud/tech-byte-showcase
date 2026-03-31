@@ -4,6 +4,8 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
+import ParticlesBackground from "./components/ParticlesBackground";
 import Index from "./pages/Index";
 import Products from "./pages/Products";
 import About from "./pages/About";
