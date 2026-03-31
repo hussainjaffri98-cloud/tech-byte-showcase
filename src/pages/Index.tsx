@@ -1,5 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import FeaturedProducts from "@/components/FeaturedProducts";
+import BrandLogos from "@/components/BrandLogos";
 import { motion } from "framer-motion";
 import { Shield, Truck, Headphones, Award } from "lucide-react";
 
