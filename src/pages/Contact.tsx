@@ -36,7 +36,7 @@ const Contact = () => {
               <div className="space-y-6 mb-10">
                 {[
                   { icon: Mail, text: "hello@techbyteinnovations.com" },
-                  { icon: Phone, text: "+1 (555) 987-6543" },
+                  { icon: Phone, text: "03131027500" },
                   { icon: MapPin, text: "San Francisco, CA" },
                 ].map(({ icon: Icon, text }) => (
                   <div key={text} className="flex items-center gap-4">

@@ -15,7 +15,8 @@ const BrandLogos = () => (
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="text-center text-sm uppercase tracking-widest text-muted-foreground mb-12 font-display"
+        className="text-center text-3xl md:text-4xl font-bold text-[#29f2f2] uppercase tracking-tighter text-foreground mb-16 font-display"
+
       >
         Trusted by Leading Brands
       </motion.p>
