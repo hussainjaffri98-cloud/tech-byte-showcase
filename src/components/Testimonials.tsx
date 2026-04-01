@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import googleLogo from "@/assets/logos/google.png";
+import microsoftLogo from "@/assets/logos/microsoft.png";
+import amazonLogo from "@/assets/logos/amazon.png";
+import samsungLogo from "@/assets/logos/samsung.png";
 
 const testimonials = [
   {
     name: "Sarah Mitchell",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/200px-Google_2015_logo.svg.png",
+    logo: googleLogo,
     logoAlt: "Google",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     text: "The quality of their peripherals is outstanding. My mechanical keyboard has been a game-changer for productivity.",
@@ -12,7 +16,7 @@ const testimonials = [
   },
   {
     name: "James Carter",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Microsoft_logo_%282012%29.svg/200px-Microsoft_logo_%282012%29.svg.png",
+    logo: microsoftLogo,
     logoAlt: "Microsoft",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     text: "Fast shipping, premium packaging, and the headphones sound incredible. Definitely my go-to tech store now.",
@@ -20,7 +24,7 @@ const testimonials = [
   },
   {
     name: "Priya Sharma",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/200px-Amazon_logo.svg.png",
+    logo: amazonLogo,
     logoAlt: "Amazon",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     text: "Their customer support is top-notch. Helped me pick the perfect monitor setup for my dual-screen workflow.",
@@ -28,7 +32,7 @@ const testimonials = [
   },
   {
     name: "David Kim",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/200px-Samsung_Logo.svg.png",
+    logo: samsungLogo,
     logoAlt: "Samsung",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     text: "I've been buying accessories here for over a year. Consistent quality and great deals every time.",
@@ -85,7 +89,7 @@ const Testimonials = () => (
             <img
               src={t.logo}
               alt={t.logoAlt}
-              className="h-4 object-contain brightness-75 invert opacity-60"
+              className="h-5 w-auto object-contain brightness-0 invert opacity-50"
               loading="lazy"
             />
           </motion.div>
