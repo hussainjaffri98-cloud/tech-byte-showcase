@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import FeaturedProducts from "@/components/FeaturedProducts";
 import BrandLogos from "@/components/BrandLogos";
+import Testimonials from "@/components/Testimonials";
 import { motion } from "framer-motion";
 import { Shield, Truck, Headphones, Award } from "lucide-react";
 
@@ -16,6 +17,7 @@ const Index = () => (
     <HeroSection />
     <FeaturedProducts />
     <BrandLogos />
+    <Testimonials />
 
     {/* Features strip */}
     <section className="section-padding bg-card/30 border-y border-border/30">
