@@ -17,6 +17,7 @@ const Index = () => (
     <HeroSection />
     <FeaturedProducts />
     <BrandLogos />
+    <Testimonials />
 
     {/* Features strip */}
     <section className="section-padding bg-card/30 border-y border-border/30">
