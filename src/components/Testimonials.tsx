@@ -81,8 +81,13 @@ const Testimonials = () => (
             <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
               "{t.text}"
             </p>
-            <h4 className="font-display font-semibold text-foreground text-sm">{t.name}</h4>
-            <span className="text-xs text-muted-foreground">{t.role}</span>
+            <h4 className="font-display font-semibold text-foreground text-sm mb-2">{t.name}</h4>
+            <img
+              src={t.logo}
+              alt={t.logoAlt}
+              className="h-4 object-contain brightness-75 invert opacity-60"
+              loading="lazy"
+            />
           </motion.div>
         ))}
       </div>
