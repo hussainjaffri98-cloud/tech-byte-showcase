@@ -31,7 +31,7 @@ const HeroSection = () => (
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed">
-          Premium computer accessories engineered for performance, designed for aesthetics. Where innovation meets everyday computing.
+         With over 10 years of combined industry experience, The Tech Byte Innovations is positioned to provide a cost-effective, custom IT solution for any need. We buy and sell new and used IT hardware from all major brands, helping you save costs while increasing reliability.
         </p>
 
         <div className="flex flex-wrap gap-4">
