@@ -16,16 +16,24 @@ const brands = [
 const BrandLogos = () => (
   <section className="section-padding border-y border-border/30">
     <div className="max-w-7xl mx-auto">
-      <motion.p
+      {/* <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="text-center text-3xl md:text-4xl font-bold text-[#29f2f2] uppercase tracking-tighter text-foreground mb-16 font-display"
+        className="text-center text-3xl md:text-4xl font-bold text-[#29f2f2] uppercase tracking-tighter mb-16 font-display"
 
       >
         Trusted by Leading Brands
-      </motion.p>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
+      </motion.p> */}
+      <motion.p
+  className="text-center text-3xl md:text-4xl font-bold uppercase tracking-tighter mb-16 font-display"
+>
+  <span className="text-white">Trusted by </span>
+  <span className="text-[#1BCFDF] drop-shadow-[0_0_10px_#1BCFDF]">
+    Leading Brands
+  </span>
+</motion.p>
+      <div className="grid grid-cols-2 sm:grid-cols-3  md:grid-cols-5 gap-8 items-center justify-items-center">
         {brands.map((brand, i) => (
           <motion.div
             key={brand.name}
@@ -41,7 +49,7 @@ const BrandLogos = () => (
               loading="lazy"
               width={512}
               height={512}
-              className="h-10 w-auto object-contain brightness-0 invert opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+              className="h-25 w-auto object-contain brightness-0 invert opacity-60 group-hover:opacity-100 transition-opacity duration-300"
             />
           </motion.div>
         ))}

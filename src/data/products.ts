@@ -20,6 +20,31 @@ import monitorImg from "@/assets/monitor.jpg";
 import monitorImg2 from "@/assets/products/monitor-2.jpg";
 import monitorImg3 from "@/assets/products/monitor-3.jpg";
 
+import ssd1 from "@/assets/products/ssd-1.jpg";
+import ssd2 from "@/assets/products/ssd-2.jpg";
+import ssd3 from "@/assets/products/ssd-3.jpg";
+import ssd4 from "@/assets/products/ssd-4.jpg";
+import ram1 from "@/assets/products/ram-1.jpg";
+import ram2 from "@/assets/products/ram-2.jpg";
+import ram3 from "@/assets/products/ram-3.jpg";
+import ram4 from "@/assets/products/ram-4.jpg";
+import rom1 from "@/assets/products/rom-1.jpg";
+import rom2 from "@/assets/products/rom-2.jpg";
+import rom3 from "@/assets/products/rom-3.jpg";
+import rom4 from "@/assets/products/rom-4.jpg";
+import switch1 from "@/assets/products/switch-1.jpg";
+import switch2 from "@/assets/products/switch-2.jpg";
+import switch3 from "@/assets/products/switch-3.jpg";
+import switch4 from "@/assets/products/switch-4.jpg";
+import sfp1 from "@/assets/products/sfp-1.jpg";
+import sfp2 from "@/assets/products/sfp-2.jpg";
+import sfp3 from "@/assets/products/sfp-3.jpg";
+import sfp4 from "@/assets/products/sfp-4.jpg";
+import router1 from "@/assets/products/router-1.jpg";
+import router2 from "@/assets/products/router-2.jpg";
+import router3 from "@/assets/products/router-3.jpg";
+import router4 from "@/assets/products/router-4.jpg";
+
 export interface Product {
   id: string;
   name: string;
@@ -99,6 +124,75 @@ export const products: Product[] = [
     images: [monitorImg, monitorImg2, monitorImg3],
     featured: true,
   },
+  {
+    id: "8",
+    name: "Velocity NVMe SSD 2TB",
+    price: "$179.99",
+    category: "Storage",
+    description: "PCIe Gen4 NVMe M.2 SSD with 7,000MB/s read speeds, DRAM cache, and AES 256-bit encryption.",
+    image: ssd1,
+    images: [ssd1, ssd2, ssd3, ssd4],
+    featured: true,
+  },
+  {
+    id: "9",
+    name: "Apex DDR5 RAM 32GB Kit",
+    price: "$149.99",
+    category: "Memory",
+    description: "DDR5-6000 dual-channel kit with RGB heatspreader, Intel XMP 3.0, and on-die ECC support.",
+    image: ram1,
+    images: [ram1, ram2, ram3, ram4],
+  },
+  {
+    id: "10",
+    name: "FlashCore ROM Module",
+    price: "$39.99",
+    category: "Components",
+    description: "Industrial-grade EEPROM module with 256Kb capacity, SPI interface, and 1M write-cycle endurance.",
+    image: rom1,
+    images: [rom1, rom2, rom3, rom4],
+  },
+  {
+    id: "11",
+    name: "NetBlade 24-Port Switch",
+    price: "$349.99",
+    category: "Networking",
+    description: "Managed L2+ Gigabit switch with PoE+, VLAN support, and fanless design for quiet operation.",
+    image: switch1,
+    images: [switch1, switch2, switch3, switch4],
+    featured: true,
+  },
+  {
+    id: "12",
+    name: "OptiLink SFP+ 10G Module",
+    price: "$29.99",
+    category: "Networking",
+    description: "10Gbps SFP+ transceiver with LC duplex connector, 300m multimode range, and DDM monitoring.",
+    image: sfp1,
+    images: [sfp1, sfp2, sfp3, sfp4],
+  },
+  {
+    id: "13",
+    name: "Sentinel Pro Enterprise Router",
+    price: "$499.99",
+    category: "Networking",
+    description: "Enterprise dual-WAN router with VPN, firewall, WiFi 6E, and advanced QoS for up to 200 clients.",
+    image: router1,
+    images: [router1, router2, router3, router4],
+    featured: true,
+  },
 ];
 
-export const categories = ["All", "Keyboards", "Mouse", "Headphones", "Monitors", "Mouse Pads", "Accessories"];
+export const categories = [
+  "All",
+  "Keyboards",
+  "Mouse",
+  "Headphones",
+  "Monitors",
+  "Mouse Pads",
+  "Accessories",
+  "Storage",
+  "Memory",
+  "Components",
+  "Networking",
+];
