@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
+import lenovoLogo from "@/assets/logos/lenovo.png";
+import dellLogo from "@/assets/logos/dell.png";
+import hpLogo from "@/assets/logos/hp.png";
+import ibmLogo from "@/assets/logos/ibm.png";
+import netappLogo from "@/assets/logos/netapp.png";
 
 const brands = [
-  { name: "Lenovo", letter: "L" },
-  { name: "Dell", letter: "D" },
-  { name: "HP", letter: "HP" },
-  { name: "IBM", letter: "I" },
-  { name: "NetApp", letter: "N" },
+  { name: "Lenovo", logo: lenovoLogo },
+  { name: "Dell", logo: dellLogo },
+  { name: "HP", logo: hpLogo },
+  { name: "IBM", logo: ibmLogo },
+  { name: "NetApp", logo: netappLogo },
 ];
 
 const BrandLogos = () => (
@@ -28,14 +33,16 @@ const BrandLogos = () => (
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1, duration: 0.5 }}
-            className="group flex flex-col items-center gap-2 px-6 py-5 rounded-xl border border-border/30 bg-card/20 w-full cursor-default transition-all duration-300 hover:border-primary/40 hover:bg-card/50 hover:shadow-[0_0_20px_hsl(180_85%_55%/0.15)] hover:scale-105"
+            className="group flex items-center justify-center px-6 py-5 rounded-xl border border-border/30 bg-card/20 w-full cursor-default transition-all duration-300 hover:border-primary/40 hover:bg-card/50 hover:shadow-[0_0_20px_hsl(180_85%_55%/0.15)] hover:scale-105"
           >
-            <span className="text-3xl font-display font-bold text-muted-foreground group-hover:text-primary transition-colors duration-300">
-              {brand.letter}
-            </span>
-            <span className="text-xs uppercase tracking-wider text-muted-foreground/70 group-hover:text-muted-foreground transition-colors duration-300">
-              {brand.name}
-            </span>
+            <img
+              src={brand.logo}
+              alt={brand.name}
+              loading="lazy"
+              width={512}
+              height={512}
+              className="h-10 w-auto object-contain brightness-0 invert opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+            />
           </motion.div>
         ))}
       </div>

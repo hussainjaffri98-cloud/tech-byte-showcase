@@ -1,31 +1,39 @@
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import googleLogo from "@/assets/logos/google.png";
+import microsoftLogo from "@/assets/logos/microsoft.png";
+import amazonLogo from "@/assets/logos/amazon.png";
+import samsungLogo from "@/assets/logos/samsung.png";
 
 const testimonials = [
   {
     name: "Sarah Mitchell",
-    role: "Software Engineer",
+    logo: googleLogo,
+    logoAlt: "Google",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     text: "The quality of their peripherals is outstanding. My mechanical keyboard has been a game-changer for productivity.",
     rating: 5,
   },
   {
     name: "James Carter",
-    role: "Graphic Designer",
+    logo: microsoftLogo,
+    logoAlt: "Microsoft",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     text: "Fast shipping, premium packaging, and the headphones sound incredible. Definitely my go-to tech store now.",
     rating: 5,
   },
   {
     name: "Priya Sharma",
-    role: "Data Analyst",
+    logo: amazonLogo,
+    logoAlt: "Amazon",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
     text: "Their customer support is top-notch. Helped me pick the perfect monitor setup for my dual-screen workflow.",
     rating: 4,
   },
   {
     name: "David Kim",
-    role: "Content Creator",
+    logo: samsungLogo,
+    logoAlt: "Samsung",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
     text: "I've been buying accessories here for over a year. Consistent quality and great deals every time.",
     rating: 5,
@@ -77,8 +85,13 @@ const Testimonials = () => (
             <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
               "{t.text}"
             </p>
-            <h4 className="font-display font-semibold text-foreground text-sm">{t.name}</h4>
-            <span className="text-xs text-muted-foreground">{t.role}</span>
+            <h4 className="font-display font-semibold text-foreground text-sm mb-2">{t.name}</h4>
+            <img
+              src={t.logo}
+              alt={t.logoAlt}
+              className="h-5 w-auto object-contain brightness-0 invert opacity-50"
+              loading="lazy"
+            />
           </motion.div>
         ))}
       </div>
