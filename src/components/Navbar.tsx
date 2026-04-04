@@ -20,7 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2 group">
-          <img src={techbyteLogo} alt="The Tech Byte Innovations" className="h-10 md:h-12 w-auto object-contain brightness-0 invert" />
+          <img src={techbyteLogo} alt="The Tech Byte Innovations" className="h-10 md:h-12 w-auto object-contain" />
         </Link>
 
         {/* Desktop */}
