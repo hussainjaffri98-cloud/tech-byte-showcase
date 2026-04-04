@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Zap } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import techbyteLogo from "@/assets/techbyte-logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -19,10 +20,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-xl border-b border-border/50">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 md:h-20">
         <Link to="/" className="flex items-center gap-2 group">
-          <Zap className="w-6 h-6 text-primary group-hover:animate-glow-pulse transition-all" />
-          <span className="font-display font-bold text-lg tracking-tight text-foreground">
-            The Tech Byte <span className="text-gradient">Innovations</span>
-          </span>
+          <img src={techbyteLogo} alt="The Tech Byte Innovations" className="h-10 md:h-12 w-auto object-contain brightness-0 invert" />
         </Link>
 
         {/* Desktop */}
