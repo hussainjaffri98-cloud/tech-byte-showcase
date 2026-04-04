@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Zap, Instagram, Twitter, Youtube, Github } from "lucide-react";
+import { Instagram, Twitter, Youtube, Github } from "lucide-react";
+import techbyteLogo from "@/assets/techbyte-logo.png";
 
 const Footer = () => (
   <footer className="border-t border-border/50 bg-card/30">
@@ -8,8 +9,7 @@ const Footer = () => (
         {/* Brand */}
         <div>
           <Link to="/" className="flex items-center gap-2 mb-3">
-            <Zap className="w-5 h-5 text-primary" />
-            <span className="font-display font-bold text-foreground">The Tech Byte Innovations</span>
+            <img src={techbyteLogo} alt="The Tech Byte Innovations" className="h-10 w-auto object-contain" />
           </Link>
           <p className="text-sm text-muted-foreground leading-relaxed">
             Premium computer accessories for the modern tech enthusiast.
