@@ -39,8 +39,8 @@ const Footer = () => (
         <div>
           <h4 className="font-display font-semibold text-foreground mb-4 text-sm">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>hello@techbyteinnovations.com</li>
-            <li>03131027500</li>
+            <li>info@ttbi.co.uk</li>
+            <li>+44 7787 454955</li>
           </ul>
         </div>
 
